@@ -18,6 +18,7 @@
     - [Payment Success Page](#payment-success-page)
     - [Payment Cancel Page](#payment-cancel-page)
   - [Deployment](#deployment)
+  - [Future Features](#future-features)
   - [Contact](#contact)
 
 This is a full-stack MERN (MongoDB, Express, React, Node.js) application that implements a checkout system with secure payment methods such as PayPal. It also includes user-friendly features like form validation, route protection, and loader components. The backend handles payment data storage using MongoDB with transaction support for reliable data consistency.
@@ -213,6 +214,18 @@ To deploy the app to a production environment:
 2. Set up your environment variables on the production server.
 3. Build the React frontend using `npm run build`.
 4. Deploy both the frontend and backend on a platform like [Heroku](https://www.heroku.com/), [Vercel](https://vercel.com/), or [DigitalOcean](https://www.digitalocean.com/).
+
+## Future Features
+
+- **Formik & Yup**: Advanced form handling and validation on the frontend.
+- **PropTypes**: Type checking for React component props to improve reliability.
+- **Joi**: Server-side data validation schema for request payloads.
+- **Authentication**: Secure login and user authentication using JWT or OAuth.
+- **CSRF Protection**: Implement Cross-Site Request Forgery protection for secure requests.
+- **Rate Limiting**: Limit API requests to prevent abuse and enhance security.
+- **Helmet**: Add HTTP security headers for enhanced backend protection.
+- **Logging**: Implement centralized error and activity logging for debugging.
+- **Cache Optimization**: Improve performance using Redis or in-memory caching for frequently requested data.
 
 ---
 
