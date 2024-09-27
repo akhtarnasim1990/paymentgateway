@@ -1,0 +1,140 @@
+.checkout-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f9fc;
+}
+
+.checkout-card {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0 0 20px 0 !important;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+  width: 50%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  background-color: #fafafa;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #62a6f2;
+}
+
+.error-msg {
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+.checkout-btn {
+  padding: 12px;
+  background-color: #62a6f2;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+  background-color: #4f8ed7;
+}
+
+.checkout-btn:disabled {
+  background-color: #a5c7f3;
+  cursor: not-allowed;
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid #ffffff;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .checkout-container {
+    height: auto;
+  }
+  .checkout-card {
+    padding: 20px;
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .input-group input {
+    padding: 10px;
+  }
+
+  .input-container {
+    flex-direction: column;
+  }
+
+  .input-group {
+    width: 100%;
+    padding: 0;
+  }
+
+  .checkout-btn {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
